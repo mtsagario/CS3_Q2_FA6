@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        a {
+            color: wheat;
+            background-color: rgb(105, 1, 1);
+            text-decoration: none;
+            border-style: solid;
+            border-color: black;
+            margin-right: 10px;
+        }
+
+        a:visited {
+            color: rgb(255, 127, 200);
+            background-color: rgb(255, 0, 144);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(139, 87, 203);
+            background-color: rgb(75, 44, 114);
+            text-decoration: none;
+        }
+
+        a:active {
+            color: rgb(110, 161, 255);
+            background-color: rgb(15, 45, 102);
+            text-decoration: none;
+        }
+
+        #div1 {
+            border-style: solid;
+            border-color: palevioletred;
+            border: 20 px solid palevioletred;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+			background-color: transparent;
+        }
+
+        #div2 {
+            border-style: solid;
+            border-color: palevioletred;
+            border: 20 px solid palevioletred; 
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin-top: 10px;
+			background-color: transparent;
+        }
+
+        #div1:target {
+            background-color: rgb(160, 91, 12);
+            color: rgb(255, 187, 0); 
+        }
+
+
+        #div2:target {
+            border: 10px dotted green;
+			background-color: rgb(12, 64, 12);
+			color: rgb(68, 168, 68);
+        }
+		
+    </style>
+</head>
+
+<body>
+
+    <a href="#div1"> First Link </a>
+    <a href="#div2"> Second Link </a>
+    <div id="div1"> Div1 </div>
+    <br>
+    <div id="div2"> Div2 </div>
+
+</body>
+
+</html>
